@@ -1,7 +1,9 @@
 using System.IO;
 using System.Text;
 using System.Windows.Forms;
+using Encryption;
 using static System.Net.Mime.MediaTypeNames;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Encryption
 {
@@ -42,8 +44,14 @@ namespace Encryption
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private  void button1_Click(object sender, EventArgs e)
         {
+            
+            Caesar caesar = new Caesar();
+            string buf =  textBox1.Text;
+            textBox1.Text = caesar.Encrypt(buf.ToString(), 7);
+            
+            
 
         }
 
@@ -59,7 +67,7 @@ namespace Encryption
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -79,7 +87,8 @@ namespace Encryption
 
         private void createToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Form form = new Form2();
+            form.Show();
         }
 
         private async void openToolStripMenuItem_Click(object sender, EventArgs e)

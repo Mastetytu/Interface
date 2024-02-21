@@ -10,7 +10,7 @@ namespace Encryption
     {
         const string alfabet = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ";
 
-        private string CodeEncode(string text, int k)
+        public string CodeEncode(string text, int k)
         {
             //добавляем в алфавит маленькие буквы
             var fullAlfabet = alfabet + alfabet.ToLower();
@@ -31,8 +31,8 @@ namespace Encryption
                     retVal += fullAlfabet[codeIndex];
                 }
             }
-
             return retVal;
+            
         }
 
         //шифрование текста
