@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
-            comboBox1 = new ComboBox();
+            textBox2 = new TextBox();
             button2 = new Button();
             button1 = new Button();
             groupBox2 = new GroupBox();
@@ -51,7 +51,7 @@
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(comboBox1);
+            groupBox1.Controls.Add(textBox2);
             groupBox1.Controls.Add(button2);
             groupBox1.Controls.Add(button1);
             groupBox1.Location = new Point(12, 57);
@@ -62,14 +62,13 @@
             groupBox1.Text = "groupBox1";
             groupBox1.Enter += groupBox1_Enter;
             // 
-            // comboBox1
+            // textBox2
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(9, 28);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(121, 23);
-            comboBox1.TabIndex = 2;
-            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            textBox2.Location = new Point(6, 38);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(24, 23);
+            textBox2.TabIndex = 2;
+            textBox2.TextChanged += textBox2_TextChanged;
             // 
             // button2
             // 
@@ -150,14 +149,14 @@
             // сolorToolStripMenuItem
             // 
             сolorToolStripMenuItem.Name = "сolorToolStripMenuItem";
-            сolorToolStripMenuItem.Size = new Size(180, 22);
+            сolorToolStripMenuItem.Size = new Size(103, 22);
             сolorToolStripMenuItem.Text = "Сolor";
             сolorToolStripMenuItem.Click += сolorToolStripMenuItem_Click;
             // 
             // textToolStripMenuItem
             // 
             textToolStripMenuItem.Name = "textToolStripMenuItem";
-            textToolStripMenuItem.Size = new Size(180, 22);
+            textToolStripMenuItem.Size = new Size(103, 22);
             textToolStripMenuItem.Text = "Text";
             textToolStripMenuItem.Click += textToolStripMenuItem_Click;
             // 
@@ -204,6 +203,7 @@
             Text = "Form1";
             Load += Form1_Load;
             groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
             menuStrip1.ResumeLayout(false);
@@ -219,7 +219,6 @@
         private Button button1;
         private GroupBox groupBox2;
         private TextBox textBox1;
-        private ComboBox comboBox1;
         private Button button3;
         private Button button4;
         private MenuStrip menuStrip1;
@@ -230,5 +229,6 @@
         private ToolStripMenuItem optionsToolStripMenuItem;
         private ToolStripMenuItem сolorToolStripMenuItem;
         private ToolStripMenuItem textToolStripMenuItem;
+        private TextBox textBox2;
     }
 }

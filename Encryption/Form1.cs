@@ -17,7 +17,7 @@ namespace Encryption
             colorDialog1.FullOpen = true;
             colorDialog1.Color = this.BackColor;
             fontDialog2.Font = fontDialog2.Font;
-            
+
 
 
         }
@@ -36,22 +36,26 @@ namespace Encryption
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            textBox1.Clear();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Caesar caesar = new Caesar();
+            int r = textBox2.TabIndex;
+            string buf = textBox1.Text;
+            textBox1.Text = caesar.Decrypt(buf.ToString(), r);
         }
 
-        private  void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            
+
             Caesar caesar = new Caesar();
-            string buf =  textBox1.Text;
-            textBox1.Text = caesar.Encrypt(buf.ToString(), 7);
-            
-            
+            int r = textBox2.TabIndex;
+            string buf = textBox1.Text;
+            textBox1.Text = caesar.Encrypt(buf.ToString(), r);
+
+
 
         }
 
@@ -67,7 +71,7 @@ namespace Encryption
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -124,10 +128,10 @@ namespace Encryption
         private void ÒolorToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-            
-                ColorDialog colorDialog1 = new ColorDialog();
-                if (colorDialog1.ShowDialog() == DialogResult.Cancel)
-                    return;
+
+            ColorDialog colorDialog1 = new ColorDialog();
+            if (colorDialog1.ShowDialog() == DialogResult.Cancel)
+                return;
 
             this.BackColor = colorDialog1.Color;
 
@@ -141,6 +145,13 @@ namespace Encryption
             this.Font = fontDialog2.Font;
             // ÛÒÚ‡ÌÓ‚Í‡ ˆ‚ÂÚ‡ ¯ËÙÚ‡
             this.ForeColor = fontDialog2.Color;
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            Convert.ToInt32(textBox2.Text);
+
+
         }
     }
 }
