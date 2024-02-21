@@ -42,7 +42,6 @@
             сolorToolStripMenuItem = new ToolStripMenuItem();
             textToolStripMenuItem = new ToolStripMenuItem();
             textBox1 = new TextBox();
-            button3 = new Button();
             button4 = new Button();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
@@ -169,16 +168,6 @@
             textBox1.TabIndex = 2;
             textBox1.TextChanged += textBox1_TextChanged;
             // 
-            // button3
-            // 
-            button3.Location = new Point(602, 402);
-            button3.Name = "button3";
-            button3.Size = new Size(75, 23);
-            button3.TabIndex = 3;
-            button3.Text = "Сохранить";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
-            // 
             // button4
             // 
             button4.Location = new Point(710, 402);
@@ -195,7 +184,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(button4);
-            Controls.Add(button3);
             Controls.Add(textBox1);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
@@ -219,7 +207,6 @@
         private Button button1;
         private GroupBox groupBox2;
         private TextBox textBox1;
-        private Button button3;
         private Button button4;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem fileToolStripMenuItem;

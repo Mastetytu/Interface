@@ -28,11 +28,7 @@ namespace Encryption
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Form form = new Form2();
-            form.Show();
-        }
+       
 
         private void button4_Click(object sender, EventArgs e)
         {
@@ -42,7 +38,7 @@ namespace Encryption
         private void button2_Click(object sender, EventArgs e)
         {
             Caesar caesar = new Caesar();
-            int r = textBox2.TabIndex;
+            int r = Convert.ToInt32(textBox2.Text); ;
             string buf = textBox1.Text;
             textBox1.Text = caesar.Decrypt(buf.ToString(), r);
         }
@@ -51,7 +47,7 @@ namespace Encryption
         {
 
             Caesar caesar = new Caesar();
-            int r = textBox2.TabIndex;
+            int r = Convert.ToInt32(textBox2.Text); ;
             string buf = textBox1.Text;
             textBox1.Text = caesar.Encrypt(buf.ToString(), r);
 
@@ -89,10 +85,18 @@ namespace Encryption
 
         }
 
+
         private void createToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form form = new Form2();
-            form.Show();
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "Текстовый документ (*.txt)|*.txt|Все файлы (*.*)|*.*";
+
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                StreamWriter streamWriter = new StreamWriter(saveFileDialog.FileName);
+                streamWriter.WriteLine(textBox1.Text);
+                streamWriter.Close();
+            }
         }
 
         private async void openToolStripMenuItem_Click(object sender, EventArgs e)
