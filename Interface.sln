@@ -5,7 +5,11 @@ VisualStudioVersion = 17.9.34607.119
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab_1", "Lab_1", "{E12CA299-164B-4317-9728-4EBD1D61659C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encryption", "Encryption\Encryption.csproj", "{1EFDC5BE-4728-4241-B875-BF4D35B9D035}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Encryption", "Encryption\Encryption.csproj", "{1EFDC5BE-4728-4241-B875-BF4D35B9D035}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab_2", "Lab_2", "{6E2AC98E-B150-498C-9880-3705707C40C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lottery", "Lottery\Lottery.csproj", "{E819FE7A-BE51-4CEC-A9B7-398F9818EBEC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,12 +21,17 @@ Global
 		{1EFDC5BE-4728-4241-B875-BF4D35B9D035}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1EFDC5BE-4728-4241-B875-BF4D35B9D035}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1EFDC5BE-4728-4241-B875-BF4D35B9D035}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E819FE7A-BE51-4CEC-A9B7-398F9818EBEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E819FE7A-BE51-4CEC-A9B7-398F9818EBEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E819FE7A-BE51-4CEC-A9B7-398F9818EBEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E819FE7A-BE51-4CEC-A9B7-398F9818EBEC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{1EFDC5BE-4728-4241-B875-BF4D35B9D035} = {E12CA299-164B-4317-9728-4EBD1D61659C}
+		{E819FE7A-BE51-4CEC-A9B7-398F9818EBEC} = {6E2AC98E-B150-498C-9880-3705707C40C2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {45BF7AE9-D914-4E67-A746-0D95A68984BE}
