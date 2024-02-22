@@ -43,6 +43,7 @@
             textToolStripMenuItem = new ToolStripMenuItem();
             textBox1 = new TextBox();
             button4 = new Button();
+            label1 = new Label();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             menuStrip1.SuspendLayout();
@@ -50,6 +51,7 @@
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(label1);
             groupBox1.Controls.Add(textBox2);
             groupBox1.Controls.Add(button2);
             groupBox1.Controls.Add(button1);
@@ -58,7 +60,6 @@
             groupBox1.Size = new Size(284, 381);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
-            groupBox1.Text = "groupBox1";
             groupBox1.Enter += groupBox1_Enter;
             // 
             // textBox2
@@ -97,7 +98,7 @@
             groupBox2.Size = new Size(776, 42);
             groupBox2.TabIndex = 1;
             groupBox2.TabStop = false;
-            groupBox2.Text = "groupBox2";
+            groupBox2.Enter += groupBox2_Enter;
             // 
             // menuStrip1
             // 
@@ -178,6 +179,16 @@
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(11, 17);
+            label1.Name = "label1";
+            label1.Size = new Size(26, 15);
+            label1.TabIndex = 3;
+            label1.Text = "Key";
+            label1.Click += label1_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -217,5 +228,6 @@
         private ToolStripMenuItem сolorToolStripMenuItem;
         private ToolStripMenuItem textToolStripMenuItem;
         private TextBox textBox2;
+        private Label label1;
     }
 }

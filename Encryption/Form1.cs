@@ -28,7 +28,7 @@ namespace Encryption
 
         }
 
-       
+
 
         private void button4_Click(object sender, EventArgs e)
         {
@@ -155,6 +155,16 @@ namespace Encryption
         {
             Convert.ToInt32(textBox2.Text);
 
+
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
 
         }
     }
