@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
+            label1 = new Label();
             textBox2 = new TextBox();
             button2 = new Button();
             button1 = new Button();
@@ -43,7 +44,6 @@
             textToolStripMenuItem = new ToolStripMenuItem();
             textBox1 = new TextBox();
             button4 = new Button();
-            label1 = new Label();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             menuStrip1.SuspendLayout();
@@ -61,6 +61,16 @@
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Enter += groupBox1_Enter;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(11, 17);
+            label1.Name = "label1";
+            label1.Size = new Size(26, 15);
+            label1.TabIndex = 3;
+            label1.Text = "Key";
+            label1.Click += label1_Click;
             // 
             // textBox2
             // 
@@ -179,16 +189,6 @@
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(11, 17);
-            label1.Name = "label1";
-            label1.Size = new Size(26, 15);
-            label1.TabIndex = 3;
-            label1.Text = "Key";
-            label1.Click += label1_Click;
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -199,7 +199,7 @@
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Шифровшик";
             Load += Form1_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();

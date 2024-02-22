@@ -85,7 +85,8 @@
             ClientSize = new Size(800, 450);
             Controls.Add(groupBox1);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Стартовый проект";
+            Load += Form1_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ResumeLayout(false);
