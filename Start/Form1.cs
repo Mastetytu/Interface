@@ -1,7 +1,7 @@
 using System.Diagnostics;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-
+using Encryption;
 namespace Start
 {
     public partial class Form1 : Form
@@ -18,16 +18,18 @@ namespace Start
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            
             var p = new Process();
             switch (comboBox1.SelectedIndex)
             {
+
                 case 0:
-                    p.StartInfo.FileName = @"C:\Users\aleks\source\repos\Interface\Lottery\bin\Debug\net8.0-windows\Lottery";
+
+                    p.StartInfo.FileName = "Lottery";
                     p.Start();
                     break;
                 case 1:
-                    p.StartInfo.FileName = @"C:\Users\aleks\source\repos\Interface\Encryption\bin\Debug\net8.0-windows\Encryption";
+                    p.StartInfo.FileName ="Encryption";
                     p.Start();
                     break;
             }
